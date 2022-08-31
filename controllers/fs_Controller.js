@@ -47,7 +47,7 @@ const get_freq_termino = (contenido,termino)=>{
     frecuencia[termino] = 0;
 
     for(i=0;i<tokens.length;i++){
-        var palabra = tokens[i];
+        var palabra = tokens[i].toUpperCase(); 
         if(palabra.includes(termino))
             frecuencia[termino]+=1;                
     }

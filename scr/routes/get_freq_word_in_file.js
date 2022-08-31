@@ -5,7 +5,7 @@ const logica_frecuencia_in_file = (req,res)=>{
     
     const datos = req.query;
     const nombre_doc = datos['doc_name'];
-    const termino = datos['term']; 
+    const termino = datos['term'].toUpperCase(); // le hago el upper para que cuente que no quede como key sensitive
     
     const params_Controller = require('../../controllers/params_Controller.js');
     const params_correctos = params_Controller.params_freq_word(true,nombre_doc,termino);
