@@ -28,3 +28,5 @@ los documentos dados. Donde el término es pasado como un query param.
 Frecuencia de una palabra en un directorio:
 - http://localhost:3000/api/get_freq_word?&term=casa
 Respuesta: { "frecuencia": 6548 }
+
+#UNA ACLARACION ES QUE NO BUSCA PALABRAS CON TILDE
